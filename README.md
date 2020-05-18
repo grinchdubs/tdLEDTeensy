@@ -1,2 +1,2 @@
 # tdLEDTeensy
-TD to WS2811 via Teensy 
+TouchDesigner to WS2811 via Teensy 
