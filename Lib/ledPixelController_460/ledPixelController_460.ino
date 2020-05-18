@@ -25,11 +25,11 @@ void setup() {
 
 // ------------------- Main Loop -------------------- //
 void loop() {
-  if(Serial.available() > 0) {
+  if (Serial.available() > 0) {
     Serial.readBytes(inputBuffer, numOfBytes);
   }
-      for (int j = 0; j < numLeds; j++) {
-        leds[j] = CRGB(inputBuffer[(j*3)],inputBuffer[(j*3)+1],inputBuffer[(j*3)+2]);
-      }
-      LEDS.show();
+  for (int j = 0; j < numLeds; j++) {
+    leds[j] = CRGB(inputBuffer[(j * 3)], inputBuffer[(j * 3) + 1], inputBuffer[(j * 3) + 2]);
+  }
+  LEDS.show();
 }
